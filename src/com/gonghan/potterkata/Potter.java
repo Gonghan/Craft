@@ -30,7 +30,6 @@ public class Potter {
 		// nums[i] shows the number of the ith book in the list
 		dp = new HashMap<>();
 		ruleMap = new HashMap<>();
-		ruleMap.put(0, 0d);
 		ruleMap.put(1, 1d);
 		ruleMap.put(2, 0.95d);
 		ruleMap.put(3, 0.90d);
@@ -104,19 +103,17 @@ public class Potter {
 	}
 
 	private boolean isAllZero(int[] array) {
-		int sum = 0;
 		for (int i : array) {
-			sum += i;
+			if(i!=0){
+				return false;
+			}
 		}
-		if (sum == 0) {
-			return true;
-		}
-		return false;
+		return true;
 	}
 
-	public static void main(String args[]) {
-		Potter p = new Potter();
-		int list[] = { 1, 3, 2, 4, 0 };
-		System.out.println(p.price(list));
-	}
+//	public static void main(String args[]) {
+//		Potter p = new Potter();
+//		int list[] = { 1, 3, 2, 4, 0 };
+//		System.out.println(p.price(list));
+//	}
 }
