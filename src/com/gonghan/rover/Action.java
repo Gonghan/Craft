@@ -6,4 +6,6 @@ public interface Action {
 	void turnRight();
 	void forward() throws Exception;
 	void backward() throws Exception;
+	
+	void fly();
 }

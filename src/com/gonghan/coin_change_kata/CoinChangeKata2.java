@@ -1,13 +1,8 @@
 package com.gonghan.coin_change_kata;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class CoinChangeKata2 {
 	Map<Integer, int[]> map;// money=>coin.number

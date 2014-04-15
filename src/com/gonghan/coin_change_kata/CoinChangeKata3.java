@@ -23,6 +23,7 @@ public class CoinChangeKata3 {
 					for (int i = 1; i < 5; i++)
 						result[i] = Integer.parseInt(strs[i]);
 			}
+			scanner.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

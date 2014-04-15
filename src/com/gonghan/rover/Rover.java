@@ -126,4 +126,10 @@ public class Rover implements Action {
 				+ direction.getFacing() + "]";
 	}
 
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		// fly
+	}
+
 }
